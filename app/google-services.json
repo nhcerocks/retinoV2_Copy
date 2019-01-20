@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "943056619731",
+    "firebase_url": "https://diabetic-retinopathy-det-122a4.firebaseio.com",
+    "project_id": "diabetic-retinopathy-det-122a4",
+    "storage_bucket": "diabetic-retinopathy-det-122a4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:943056619731:android:ec6cbcda34274b0e",
+        "android_client_info": {
+          "package_name": "com.openpower.pes_img_classifier"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "943056619731-klvprjgmf3nb5o3kas3f7emn5fmtr028.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.openpower.pes_img_classifier",
+            "certificate_hash": "c5b223acba7180758deff75a4e6c979cfc42f7a3"
+          }
+        },
+        {
+          "client_id": "943056619731-7dv2ehua10v70aa28cju081pfdc5n7bo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSz2-E7xyn6-WQzLn-Z3R9aBu5ZmlIWc4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "943056619731-7dv2ehua10v70aa28cju081pfdc5n7bo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
