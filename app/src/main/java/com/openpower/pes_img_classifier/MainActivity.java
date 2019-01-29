@@ -1,5 +1,6 @@
 package com.openpower.pes_img_classifier;
 
+import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -15,11 +16,16 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.View;
 import org.tensorflow.contrib.android.TensorFlowInferenceInterface;
+
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 import com.shoravsuriyal.image_classifier3.R;
@@ -47,6 +53,12 @@ public class MainActivity extends AppCompatActivity {
     private static final int IMAGE_MEAN = 128;
     private static final float IMAGE_STD = 128.0f;
 
+    private float[] outputs= new float[2];
+    private String str;
+
+    Dialog myDialog;
+    Button saveResult, testAgain;
+    TextView result;
 
     static {
 
@@ -100,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         upload = findViewById(R.id.upload);
         classify = findViewById(R.id.classify);
-        textView=findViewById(R.id.textView);
+
         image = findViewById(R.id.imageView);
         tensorFlowInferenceInterface = new TensorFlowInferenceInterface(getAssets(), GRAPH_FILE);
 
@@ -128,8 +140,8 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                float[] outputs= new float[2];
-                String str;
+               // float[] outputs= new float[2];
+                //String str;
                 float[] pixels= getPixelData(MainActivity.getBitmap());
                 //Bitmap f=getBitmap();
                 //float[] pixels= getPixelData(f);
@@ -154,12 +166,56 @@ public class MainActivity extends AppCompatActivity {
                     str="No Diabetic Retinopathy";
                     index=1;}
                 //String str1="DR: "+ Float.toString(outputs[0]*100)+" No DR: "+Float.toString(outputs[1]*100);
-                textView.setText(str+'\n'+"Score = "+Float.toString(outputs[index]*100)+"%");
-
+                //textView.setText(str+'\n'+"Score = "+Float.toString(outputs[index]*100)+"%");
+                MyCustomAlertDialog(outputs,str,index);
             }
         });
     }
 
+    public void MyCustomAlertDialog(float[] outputs,String str,int index)
+    {
+        float outputParameter;
+        String strParameter;
+        int indexParamerter;
+
+        indexParamerter = index;
+        outputParameter = outputs[indexParamerter];
+        strParameter = str;
+
+
+        myDialog = new Dialog(MainActivity.this);
+        myDialog.setContentView(R.layout.custom_dialog);
+        myDialog.setTitle("Diabetic Retinopathy Result");
+
+        saveResult = (Button)myDialog.findViewById(R.id.saveResult);
+        testAgain = (Button)myDialog.findViewById(R.id.testAgain);
+        result = (TextView)myDialog.findViewById(R.id.result);
+
+        saveResult.setEnabled(true);
+        testAgain.setEnabled(true);
+
+        result.setText(strParameter+'\n'+"Score = "+Float.toString(outputParameter*100)+"%");
+
+        saveResult.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(),"Saved Successfuly",Toast.LENGTH_SHORT);
+            }
+        });
+
+        testAgain.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(),MainActivity.class);
+                startActivity(i);
+            }
+        });
+        Window dialogWindow = myDialog.getWindow();
+        WindowManager.LayoutParams lp = dialogWindow.getAttributes();
+        dialogWindow.setGravity(Gravity.CENTER | Gravity.TOP);
+        myDialog.show();
+
+    }
     //*************************************************************************
 
     private boolean checkPermission() {
