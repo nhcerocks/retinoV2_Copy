@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">943056619731-7dv2ehua10v70aa28cju081pfdc5n7bo.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://diabetic-retinopathy-det-122a4.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">943056619731</string>
+    <string name="google_api_key" translatable="false">AIzaSyDSz2-E7xyn6-WQzLn-Z3R9aBu5ZmlIWc4</string>
+    <string name="google_app_id" translatable="false">1:943056619731:android:ec6cbcda34274b0e</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDSz2-E7xyn6-WQzLn-Z3R9aBu5ZmlIWc4</string>
+    <string name="google_storage_bucket" translatable="false">diabetic-retinopathy-det-122a4.appspot.com</string>
+    <string name="project_id" translatable="false">diabetic-retinopathy-det-122a4</string>
+</resources>
