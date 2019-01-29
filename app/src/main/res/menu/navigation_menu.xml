@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_logout"
+        android:title="Logout"
+        android:icon="@mipmap/outline_input_black_24dp"/>
+    <item android:id="@+id/nav_sync"
+        android:title="Sync to server"
+        android:icon="@mipmap/outline_backup_black_24dp" />
+    <item android:id="@+id/nav_abt"
+        android:title="About us"
+        android:icon="@mipmap/outline_album_black_24dp"/>
+    <item android:id="@+id/nav_reports"
+        android:title="Reports"
+        android:icon="@mipmap/outline_assignment_black_24dp"/>
+    <item android:id="@+id/nav_acct"
+        android:title="Profile"
+        android:icon="@mipmap/outline_account_circle_black_24dp"/>
+</menu>

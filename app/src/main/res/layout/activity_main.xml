@@ -11,6 +11,12 @@
     android:paddingTop="16dp"
     tools:context="com.shoravsuriyal.pes_img_classifier.MainActivity">
 
+    <include layout="@layout/navigation_action_bar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textColor = "@color/colorPrimaryDark"
+        />
+
 
     <ImageView
         android:id="@+id/imageView"
