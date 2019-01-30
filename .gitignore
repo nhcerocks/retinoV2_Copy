@@ -66,3 +66,5 @@ app/build/intermediates/blame/res/debug/multi-v2/values-zh-rTW.json
 app/build/intermediates/blame/res/debug/multi-v2/values-zu.json
 app/build/intermediates/blame/res/debug/multi-v2/values.json
 app/build/intermediates/blame/res/debug/single/debug.json
+*.json
+*.json

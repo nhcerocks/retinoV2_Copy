@@ -70,14 +70,14 @@ public class Login extends Activity {
                         if (task.isSuccessful()) {
                             // Sign in success, update UI with the signed-in user's information
                             //Log.d(TAG, "signInWithEmail:success");
-                            Toast.makeText(Login.this, "Authentication Success", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(Login.this, "Authentication Success!", Toast.LENGTH_SHORT).show();
                             Intent login = new Intent(getApplicationContext(), MainActivity.class);
                             startActivity(login);
                             //updateUI(user);
                         } else {
                             // If sign in fails, display a message to the user.
                             //Log.w(TAG, "signInWithEmail:failure", task.getException());
-                            Toast.makeText(Login.this, "Authentication Failed", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(Login.this, "Authentication Failed!", Toast.LENGTH_SHORT).show();
                             //updateUI(null);
                         }
 

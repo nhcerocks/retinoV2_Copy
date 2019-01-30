@@ -9,7 +9,7 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:paddingTop="16dp"
-    tools:context="com.shoravsuriyal.pes_img_classifier.MainActivity">
+    >
 
     <include layout="@layout/navigation_action_bar"
         android:layout_height="wrap_content"
@@ -51,14 +51,5 @@
         android:text="RUN TEST"
         android:textColor="@color/colorPrimaryDark" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:text="Result"
-        android:textColor="@color/colorPrimary"
-        android:textSize="24sp"
-        android:textStyle="bold" />
+
 </RelativeLayout>
