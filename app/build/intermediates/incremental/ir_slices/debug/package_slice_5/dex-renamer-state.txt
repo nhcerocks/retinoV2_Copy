@@ -1,4 +1,4 @@
-#Wed Jan 30 01:25:01 IST 2019
-base.0=X\:\\Workflow\\KCST\\retino\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\5
+#Wed Jan 30 10:08:39 IST 2019
+base.0=/Rohit Drive/Retino/retino/app/build/intermediates/transforms/dexMerger/debug/5
 path.0=classes.dex
 renamed.0=classes.dex
