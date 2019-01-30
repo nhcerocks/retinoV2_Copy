@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Diabetic_Retinopathy</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
     <string name="action_settings">Settings</string>
 </resources>

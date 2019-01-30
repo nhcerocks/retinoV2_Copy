@@ -15,6 +15,7 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
@@ -34,6 +35,7 @@ import static android.Manifest.permission.READ_EXTERNAL_STORAGE;
 
 
 public class MainActivity extends AppCompatActivity {
+    private Toolbar nToolbar;
 
     private static final int PERMISSION_REQUEST_CODE = 200;
     private View view;
@@ -110,6 +112,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        nToolbar=(Toolbar) findViewById(R.id.nav_action_bar);
+        setSupportActionBar(nToolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle("Test");
+
+
         upload = findViewById(R.id.upload);
         classify = findViewById(R.id.classify);
 

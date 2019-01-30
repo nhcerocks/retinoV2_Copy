@@ -1,0 +1,4 @@
+#Wed Jan 30 10:08:39 IST 2019
+base.0=/Rohit Drive/Retino/retino/app/build/intermediates/transforms/dexMerger/debug/1
+path.0=classes.dex
+renamed.0=classes.dex

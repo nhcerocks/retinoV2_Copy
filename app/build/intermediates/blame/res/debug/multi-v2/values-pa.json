@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Sharma\\AndroidStudioProjects\\retinoV2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pa\\values-pa.xml",
+            "outputFile": "X:\\Workflow\\KCST\\retino\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pa\\values-pa.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Sharma\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\591319b694c9fc9591c4bec4da384e37\\res\\values-pa\\values-pa.xml",
+                    "source": "C:\\Users\\Home-PC\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\96cb324344a1de0f18a07def52a23730\\res\\values-pa\\values-pa.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Sharma\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.0.4.aar\\bc60151163d544576e425915be833e61\\res\\values-pa\\values.xml",
+                    "source": "C:\\Users\\Home-PC\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.0.4.aar\\7f17a05c564aa380e9e110f48b121881\\res\\values-pa\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -38,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Sharma\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-11.0.4.aar\\2caa01f301d8faf2d2c757061dbd0e1b\\res\\values-pa\\values.xml",
+                    "source": "C:\\Users\\Home-PC\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-11.0.4.aar\\5140923ca9a1858cad6af5d5ea98b913\\res\\values-pa\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
